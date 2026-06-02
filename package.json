@@ -1,0 +1,16 @@
+{
+  "name": "flight-skeleton",
+  "author": "Ronan Chilvers <ronan@thelittledot.com>",
+  "devDependencies": {
+    "chokidar-cli": "^3.0.0",
+    "sass": "^1.98.0"
+  },
+  "scripts": {
+    "sass-watch": "SHELL=/bin/sh chokidar 'resources/sass/**/*.scss' --shell /bin/sh -c 'npm run sass-dev'",
+    "sass-dev": "./node_modules/.bin/sass --update --style=expanded --load-path=node_modules resources/sass:web/css",
+    "sass-prod": "./node_modules/.bin/sass --no-source-map --style=compressed --load-path=node_modules resources/sass:web/css"
+  },
+  "dependencies": {
+    "bulma": "^1.0.4"
+  }
+}

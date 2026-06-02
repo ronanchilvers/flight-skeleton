@@ -1,0 +1,23 @@
+# Logs
+logs
+*.log
+
+# Dependencies
+vendor
+node_modules
+
+# Editor directories and files
+.claude
+.codex
+.zed
+
+# Configuration and cache files
+.env.php
+.phpunit.cache
+.phpunit.result.cache
+
+# Development artifacts
+web/css/*.map
+
+# Miscellaneous
+.DS_Store
