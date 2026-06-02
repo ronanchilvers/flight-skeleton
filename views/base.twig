@@ -11,9 +11,9 @@
     </head>
 
     <body{% if body_class %} class="{{ body_class }}"{% endif %}>
-        <main>
+        <div class="container is-fluid">
             {% block wrapper %}{% endblock %}
-        </main>
+        </div>
     </body>
     {% for script in get_scripts() %}
         <script src="{{ script }}"></script>
